@@ -17,7 +17,7 @@ class EMD_custom():
     super(EMD_custom,self).__init__()
     self.sd_thres = sd_thres
 
-  def emd_compute(self,x): #x: dataframe
+  def emd_compute(self,x): #x: pandas.Series
 
     def Envelope_extract(data):
       idx_max, _ = find_peaks(data)
